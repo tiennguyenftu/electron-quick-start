@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/cropper.css" />
+        <link rel="stylesheet" href="css/style.css">
+        <title>Photo Uploader</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Photo Uploader</h1>
+                <div id="ip-info"></div>
+            </div>
+            <div class="row">
+                <input type="file" id="imageSelector" class="form-control" multiple="multiple" accept="image/*">
+            </div>
+
+            <!-- Modal -->
+            {{>crop-modal}}
+
+            <hr>
+
+            <!--Image View-->
+            {{>images-view}}
+
+            <!--Script-->
+            {{>js-only}}
+        </div>
+    </body>
+</html>
